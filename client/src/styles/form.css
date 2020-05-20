@@ -1,0 +1,92 @@
+form {
+    width: 400px;
+    margin: 20px;
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    margin-bottom: 16px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid #8F9FAE;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  form textarea {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    margin-bottom: 16px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid #8F9FAE;
+    box-sizing: border-box;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  form button[type="submit"] {
+    color: #3F3862;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    padding: 13px;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(50%, 0%);
+    border: 1px solid #8F9FAE;
+    background: white;
+    transition: 0.8s;
+  }
+
+  form button[type="submit"]:hover {
+    background: #3F3862;
+    color: white;
+  }
+
+  form .error {
+    border: 1px solid #e53e3e;
+  }
+  
+  form .errorText {
+    color: #e53e3e;  
+  }
+
+   
+   @media (max-width: 1400px) {
+   form input {
+     font-size: 14px;
+   }
+   form button[type="submit"] {
+    font-size: 14px;
+    padding: 12px;
+   }
+   form textarea {
+     font-size: 14px;
+   }
+  }
+
+  @media (max-width: 992px) {
+    form input {
+      font-size: 12px;
+    }
+    form button[type="submit"] {
+      font-size: 12px;
+      padding: 10px;
+     }
+     form textarea {
+      font-size: 12px;
+    }
+    form {
+      width: 240px;
+    }
+  }
+   

@@ -1,0 +1,54 @@
+.statistics-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 3%;
+  }
+  
+  .statistics-container p {
+    font-family: TeXGyreTermes;
+    font-size: 20px;
+    text-align: left;
+    margin-top: -5%;
+    color: #8f9fae;
+  }
+  
+  @media (max-width: 1600px) {
+    .statistics-container h2 {
+      font-size: 20px;
+    }
+
+    .statistics-container p {
+      font-size: 19px;
+    }
+   }
+   
+   @media (max-width: 1400px) {
+    .statistics-container h2 {
+      font-size: 17px;
+    }
+
+    .statistics-container p {
+      font-size: 15px;
+    }
+   }
+   
+   @media (max-width: 992px) {
+    .statistics-container h2 {
+      font-size: 15px;
+    }
+
+    .statistics-container p {
+      font-size: 12px;
+    }
+   }
+
+   @media (max-width: 768px) {
+    .statistics-container h2 {
+      font-size: 16px;
+    }
+
+    .statistics-container p {
+      font-size: 14px;
+    }
+   }

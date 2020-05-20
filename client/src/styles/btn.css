@@ -1,0 +1,71 @@
+.btn-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 55%;
+    background: white;
+}
+
+.button a {
+    color: #C70909;
+}
+
+.button a:hover {
+    color: white;
+    text-decoration: none;
+}
+.button {
+    border: 1px solid #C70909;
+    background: none;
+    padding: 9px 19px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #C70909;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #C70909;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+}
+
+.button:hover {
+    background-color: #F63F3F;
+    border: 1px solid white;
+    color: white;
+}
+
+@media (max-width: 1600px) {
+ .button {
+    padding: 5px 14px;
+    font-size: 24px;
+ }
+}
+
+@media (max-width: 1400px) {
+    .button {
+        padding: 6px 15px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .button {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 6px 15px;
+        font-size: 18px;
+    }
+}

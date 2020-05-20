@@ -1,0 +1,12 @@
+* {
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+@font-face {
+    font-family: TexGyreTermes;
+    src: url('/src/fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+}

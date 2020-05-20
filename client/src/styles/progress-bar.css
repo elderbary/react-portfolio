@@ -1,0 +1,84 @@
+.name-container h2 {
+    font-size: 22px;
+    font-family: TeXGyreTermes;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3f3862;
+}
+
+.progress {
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #8F9FAE;
+    background: #8F9FAE;
+    border-radius: 100%;
+}
+
+.progress-container li {
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.progress-null {
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #8F9FAE;
+    border-radius: 100%;
+    border: solid 0.5px #8F9FAE;
+    background: #ffffff;
+}
+
+.progress-container {
+    position: absolute;
+    width: 100%;
+    transform: translate(32%, 0%);
+}
+
+.name-container {
+        margin-top: 2vh;
+    }
+
+@media (max-width: 1600px) {
+    .progress-container {
+        transform: translate(30%, 0%);
+ }
+}
+
+@media (max-width: 1400px) {
+    .progress-container {
+        transform: translate(27%, 0%);
+ }
+}
+
+@media (max-width: 992px) {
+    .progress-container {
+        transform: translate(22%, 0%);
+ }
+ .progress-null {
+    width: 11px;
+    height: 11px;
+ }
+ .progress {
+    width: 11px;
+    height: 11px;
+ }
+ .name-container h2 {
+     font-size: 17px;
+ }
+}
+
+@media (max-width: 575.98px) {
+    .name-container h2 {
+        font-size: 14px;
+    }
+    .progress-null {
+        width: 8px;
+        height: 8px;
+     }
+     .progress {
+        width: 8px;
+        height: 8px;
+     }
+}

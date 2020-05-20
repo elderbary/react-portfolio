@@ -1,0 +1,46 @@
+.social {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    margin: auto;
+    transform: translate(-12%, -100%);
+    z-index: 1;
+}
+
+
+.social ul {
+    list-style-type: none;
+}
+
+.social li {
+    text-align: center;
+    margin-top: 23%;
+}
+
+
+@media (max-width: 1600px) {
+        .social {
+            transform: translate(-30%, -100%);
+        }
+   }
+   
+@media (max-width: 1400px) {
+    .social {
+        transform: translate(-50%, -100%);
+    }
+   }
+
+@media (max-width: 992px) {
+    .social {
+        transform: translate(-80%, -70%);
+    }
+    .social img {
+        height: 14px;
+    }
+   }
+
+ @media (max-width: 768px) {
+    .social {
+        visibility: hidden;
+    }
+ }

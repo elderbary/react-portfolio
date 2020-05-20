@@ -1,0 +1,15 @@
+.pagination {
+    width: 100px;
+    height: 100px;
+    display: list-item;
+}
+.pagination-square {
+    width: 10px;
+    height: 10px;
+    background-color: #949da4;
+    margin: 10px auto 0;
+    transition: 0.3s;
+}
+.square-active {
+    background-color: #000000;
+}

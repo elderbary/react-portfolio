@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/elderbary/react-portfolio.git/static/css/main.f168d340.chunk.css",
+    "main.js": "/elderbary/react-portfolio.git/static/js/main.c2c5056e.chunk.js",
+    "main.js.map": "/elderbary/react-portfolio.git/static/js/main.c2c5056e.chunk.js.map",
+    "runtime-main.js": "/elderbary/react-portfolio.git/static/js/runtime-main.9fe1101b.js",
+    "runtime-main.js.map": "/elderbary/react-portfolio.git/static/js/runtime-main.9fe1101b.js.map",
+    "static/css/2.a5b4ddd2.chunk.css": "/elderbary/react-portfolio.git/static/css/2.a5b4ddd2.chunk.css",
+    "static/js/2.e7f20435.chunk.js": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js",
+    "static/js/2.e7f20435.chunk.js.map": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js.map",
+    "index.html": "/elderbary/react-portfolio.git/index.html",
+    "precache-manifest.abd06e67ff93df46b0884e566cf00fba.js": "/elderbary/react-portfolio.git/precache-manifest.abd06e67ff93df46b0884e566cf00fba.js",
+    "service-worker.js": "/elderbary/react-portfolio.git/service-worker.js",
+    "static/css/2.a5b4ddd2.chunk.css.map": "/elderbary/react-portfolio.git/static/css/2.a5b4ddd2.chunk.css.map",
+    "static/css/main.f168d340.chunk.css.map": "/elderbary/react-portfolio.git/static/css/main.f168d340.chunk.css.map",
+    "static/js/2.e7f20435.chunk.js.LICENSE.txt": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js.LICENSE.txt",
+    "static/media/aleksandra-wolna.jpg": "/elderbary/react-portfolio.git/static/media/aleksandra-wolna.e4fdf3a7.jpg",
+    "static/media/czlowiek-spoiler.png": "/elderbary/react-portfolio.git/static/media/czlowiek-spoiler.bbb62dfd.png",
+    "static/media/facebook.svg": "/elderbary/react-portfolio.git/static/media/facebook.75eb8f03.svg",
+    "static/media/instagram.svg": "/elderbary/react-portfolio.git/static/media/instagram.ffceac7b.svg",
+    "static/media/polacy-nie-czytaja.png": "/elderbary/react-portfolio.git/static/media/polacy-nie-czytaja.b52f89f8.png",
+    "static/media/recenzja-sucession.png": "/elderbary/react-portfolio.git/static/media/recenzja-sucession.5cd903ce.png",
+    "static/media/shitshow.png": "/elderbary/react-portfolio.git/static/media/shitshow.aad2c8af.png",
+    "static/media/szczygiel.png": "/elderbary/react-portfolio.git/static/media/szczygiel.c2836667.png",
+    "static/media/the-morning-show.png": "/elderbary/react-portfolio.git/static/media/the-morning-show.7d5522f7.png",
+    "static/media/timeline.svg": "/elderbary/react-portfolio.git/static/media/timeline.297d239d.svg",
+    "static/media/twitter.svg": "/elderbary/react-portfolio.git/static/media/twitter.bd08eed1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fe1101b.js",
+    "static/css/2.a5b4ddd2.chunk.css",
+    "static/js/2.e7f20435.chunk.js",
+    "static/css/main.f168d340.chunk.css",
+    "static/js/main.c2c5056e.chunk.js"
+  ]
+}

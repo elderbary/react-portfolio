@@ -8,3 +8,16 @@
     display: block;
     box-shadow: 0 -0.5px 20px 0 rgba(0, 0, 0, 0.34);
 }
+
+
+@media (max-width: 768px) {
+    .cvpicture-container img {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .cvpicture-container img {
+        visibility: hidden;
+    }
+}

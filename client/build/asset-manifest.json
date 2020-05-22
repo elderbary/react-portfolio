@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/elderbary/react-portfolio.git/static/css/main.f168d340.chunk.css",
-    "main.js": "/elderbary/react-portfolio.git/static/js/main.c2c5056e.chunk.js",
-    "main.js.map": "/elderbary/react-portfolio.git/static/js/main.c2c5056e.chunk.js.map",
+    "main.js": "/elderbary/react-portfolio.git/static/js/main.9deb6764.chunk.js",
+    "main.js.map": "/elderbary/react-portfolio.git/static/js/main.9deb6764.chunk.js.map",
     "runtime-main.js": "/elderbary/react-portfolio.git/static/js/runtime-main.9fe1101b.js",
     "runtime-main.js.map": "/elderbary/react-portfolio.git/static/js/runtime-main.9fe1101b.js.map",
     "static/css/2.a5b4ddd2.chunk.css": "/elderbary/react-portfolio.git/static/css/2.a5b4ddd2.chunk.css",
     "static/js/2.e7f20435.chunk.js": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js",
     "static/js/2.e7f20435.chunk.js.map": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js.map",
     "index.html": "/elderbary/react-portfolio.git/index.html",
-    "precache-manifest.abd06e67ff93df46b0884e566cf00fba.js": "/elderbary/react-portfolio.git/precache-manifest.abd06e67ff93df46b0884e566cf00fba.js",
+    "precache-manifest.d8eeb793975e113f755e1bf2f65d97fb.js": "/elderbary/react-portfolio.git/precache-manifest.d8eeb793975e113f755e1bf2f65d97fb.js",
     "service-worker.js": "/elderbary/react-portfolio.git/service-worker.js",
     "static/css/2.a5b4ddd2.chunk.css.map": "/elderbary/react-portfolio.git/static/css/2.a5b4ddd2.chunk.css.map",
     "static/css/main.f168d340.chunk.css.map": "/elderbary/react-portfolio.git/static/css/main.f168d340.chunk.css.map",
@@ -31,6 +31,6 @@
     "static/css/2.a5b4ddd2.chunk.css",
     "static/js/2.e7f20435.chunk.js",
     "static/css/main.f168d340.chunk.css",
-    "static/js/main.c2c5056e.chunk.js"
+    "static/js/main.9deb6764.chunk.js"
   ]
 }

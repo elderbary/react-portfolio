@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a903294d4aa489779b30c8d266113f86",
+    "revision": "42c068b799b76f8fc8afe95f256486db",
     "url": "/elderbary/react-portfolio.git/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elderbary/react-portfolio.git/static/css/2.a5b4ddd2.chunk.css"
   },
   {
-    "revision": "c77e7d4007e5f66442d9",
+    "revision": "445b0dcb70221690ff74",
     "url": "/elderbary/react-portfolio.git/static/css/main.f168d340.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elderbary/react-portfolio.git/static/js/2.e7f20435.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c77e7d4007e5f66442d9",
-    "url": "/elderbary/react-portfolio.git/static/js/main.c2c5056e.chunk.js"
+    "revision": "445b0dcb70221690ff74",
+    "url": "/elderbary/react-portfolio.git/static/js/main.9deb6764.chunk.js"
   },
   {
     "revision": "b5c040d4383853766d7e",

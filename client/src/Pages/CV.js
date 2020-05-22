@@ -59,7 +59,7 @@ class Test extends Component {
                                 <Row className="row-cv">
                                     {<MainTimeline />}
                                     <div className="div-timeline-mobile">
-                                        <Timeline className>
+                                        <Timeline>
                                             <Event className="event" interval={"2013 – 2016"} title={"Uniwersytet pedagogiczny im. KEN"} subtitle={""}>
                                                 Studia licencjackie, kier. Kulturoznastwo
       </Event>

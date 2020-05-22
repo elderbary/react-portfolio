@@ -148,12 +148,13 @@ a:hover {
 }
 
 .col-btn-cv {
-  margin-top: 110%;
+  margin-top: 240%;
   margin-bottom: 20%;
 }
-.container p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 10px;
+.css-vcfpfv {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 8px !important;
+  color: red !important;
 }
 
 @media (max-width: 1600px) {

@@ -39,37 +39,76 @@ class Home extends Component {
         'https://serialomaniak.pl/recenzja/themorningshow-finalsezonu-pierwszysezon',
     ];
     currentURLiterator = 0;
+    yDown = null;
+
+    getTouches = (evt) => {
+        return evt.touches || evt.originalEvent.touches;
+    }
+
+    handleTouchStart = (evt) => {
+        const firstTouch = this.getTouches(evt)[0];
+        this.yDown = firstTouch.clientY;
+    }
+
+    handleTouchMove = (evt) => {
+        if (! this.yDown ) {
+            return;
+        }
+
+        var yUp = evt.touches[0].clientY;
+
+        var yDiff = this.yDown - yUp;
+
+        if ( yDiff > 0 ) {
+            /* up swipe */
+            this.pageUp();
+        } else {
+            /* down swipe */
+            this.pageDown();
+        }
+        /* reset values */
+        this.yDown = null;
+    }
 
     handleScroll = (event) => {
         if (event.deltaY < 0) {
             if (this.currentURLiterator > 0) {
-                this.carouselText.slidePrev();
-                this.carouselStats.slidePrev();
-                this.carouselPic.slidePrev();
-                window.removeEventListener('wheel', this.handleScroll);
-                setTimeout(this.enableScroll, 800);
-
-                --this.currentURLiterator;
-                this.seeMore.unsetURL(this.seeMore.currentURL);
-                this.seeMore.setURL(this.btnURL[this.currentURLiterator]);
+                this.pageUp();
             }
         }
         else if (event.deltaY > 0) {
-            if (this.currentURLiterator < 5) {
-                this.carouselText.slideNext();
-                this.carouselStats.slideNext();
-                this.carouselPic.slideNext();
-                window.removeEventListener('wheel', this.handleScroll);
-                setTimeout(this.enableScroll, 800);
-
-                ++this.currentURLiterator;
-                this.seeMore.unsetURL(this.seeMore.currentURL);
-                this.seeMore.setURL(this.btnURL[this.currentURLiterator]);
-            } else {
-                window.location.href = '/o-mnie';
-            }
+            this.pageDown();
         }
     }
+
+    pageUp = () => {
+        this.carouselText.slidePrev();
+        this.carouselStats.slidePrev();
+        this.carouselPic.slidePrev();
+        window.removeEventListener('wheel', this.handleScroll);
+        setTimeout(this.enableScroll, 800);
+
+        --this.currentURLiterator;
+        this.seeMore.unsetURL(this.seeMore.currentURL);
+        this.seeMore.setURL(this.btnURL[this.currentURLiterator]);
+    }
+
+    pageDown = () => {
+        if (this.currentURLiterator < 5) {
+            this.carouselText.slideNext();
+            this.carouselStats.slideNext();
+            this.carouselPic.slideNext();
+            window.removeEventListener('wheel', this.handleScroll);
+            setTimeout(this.enableScroll, 800);
+
+            ++this.currentURLiterator;
+            this.seeMore.unsetURL(this.seeMore.currentURL);
+            this.seeMore.setURL(this.btnURL[this.currentURLiterator]);
+        } else {
+            window.location.href = '/o-mnie';
+        }
+    }
+
     enableScroll = () => {
         window.addEventListener('wheel', this.handleScroll);
     }
@@ -98,7 +137,7 @@ class Home extends Component {
                             <div className="div-left">
                                 <Container className="container-left">
                                     <Row className="row-text">
-                                        <Carousel easing="cubic-bezier(0.7,.15,.55,1.0)" transitionMs={700} enableSwipe={false} enableMouseSwipe={false} itemsToShow={1} itemsToScroll={1} enableSwipe={true} verticalMode={true} showArrows={false} pagination={false} ref={ref => (this.carouselText = ref)}>
+                                        <Carousel easing="cubic-bezier(0.7,.15,.55,1.0)" transitionMs={700} enableSwipe={false} enableMouseSwipe={false} itemsToShow={1} itemsToScroll={1} verticalMode={true} showArrows={false} pagination={false} ref={ref => (this.carouselText = ref)}>
                                             <Item className="item-text"> <Col className="col-std col-text"><Text title="Recenzja serialu 'Sukcesja'" text="Sukcesja to serial w którym chodzi przede wszystkim o władzę. Bohaterowie w końcu posiadają wszystko, o czym tylko zamarzą. Oprócz tego jednego – kompletnej władzy nad przedsiębiorstwem, nad którym pieczę trzyma ich osiemdziesięcioletni ojciec. Kiedy zdrowie nestora rodu zaczyna niedomagać, między rodzeństwem zaczyna się walka o to wielkie, najważniejsze wręcz stanowisko. Walka po trupach? Zaprzepaszczenie rodzinnych więzi na rzecz pieniędzy?” " /></Col> </Item>
                                             <Item className="item-text"> <Col className="col-std col-text"><Text title="Dlaczego Polacy nie czytają?" text="Chociaż na Facebooku gęsto od stron o wzniosłych tytułach nobilitujących czytanie (nie czytasz, nie idę z Tobą do łóżka) mówiących, że jeśli czytasz, to jesteś wyższą klasą, ale jeśli nie, o lepiej „nie mów do mnie teraz”. […] Czytanie ma być przyjemnością, taką samą jak oglądanie ulubionego serialu, śledzenie losów bohaterów czy granie w simsy. Gdy czuję presję, cała radość znika, ustępując miejsce pękniętemu i zniechęconemu balonowi smutku." /></Col> </Item>
                                             <Item className="item-text"> <Col className="col-std col-text"><Text title="Człowiek człowiekowi spoilerem" text="„[…] kiedy serwisy streamingowe decydują się na publikowanie całych sezonów swoich seriali, w społeczeństwie odzywają się najgroźniejsze instynkty. Człowiek człowiekowi już nie wilkiem, a spoilerem. […] internet oraz dzielenie się treściami z ludźmi często mieszkającymi po drugiej stronie kuli ziemskiej jest genialne, ale jednocześnie może prowadzić do poczucia wykluczenia. Bo jeśli nie nadążasz, to jesteś gorszy, […] coś schrzaniłeś." /></Col> </Item>
@@ -107,7 +146,7 @@ class Home extends Component {
                                             <Item className="item-text"> <Col className="col-std col-text"><Text title="Recenzja 'The Morning Show'" text="Anonimowy donos okazuje się zaledwie wierzchołkiem góry problemów, które raz po raz będą spadać na bohaterów, sprawi że akcja nabiera tempa a bohaterowie przez większość czasu ekranowego chcą wydrapać sobie oczy. Kiedy wpadają na dobry pomysł, niekoniecznie z wielkodusznych intencji. Akcja, im dalej w las, nabiera tempa, do tego stopnia, że nuda z wlekącego się pierwszego odcinka odchodzi w totalną i zupełną niepamięć." /></Col> </Item>
                                         </Carousel>
                                     </Row>
-                                    <Carousel easing="cubic-bezier(0.7,.15,.55,1.0)" transitionMs={700} enableSwipe={false} enableMouseSwipe={false} itemsToShow={1} itemsToScroll={1} enableSwipe={true} verticalMode={true} showArrows={false} pagination={false} ref={ref => (this.carouselStats = ref)}>
+                                    <Carousel easing="cubic-bezier(0.7,.15,.55,1.0)" transitionMs={700} enableSwipe={false} enableMouseSwipe={false} itemsToShow={1} itemsToScroll={1} verticalMode={true} showArrows={false} pagination={false} ref={ref => (this.carouselStats = ref)}>
                                         <Item className="item-stats" > <Row className="row-stats">
                                             <Col className="col-std col-stats"><Statistics score="5,823" description="znaków" /></Col>
                                             <Col className="col-std col-stats"><Statistics score="200" description="wyświetleń" /></Col>

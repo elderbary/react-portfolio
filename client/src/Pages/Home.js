@@ -115,10 +115,14 @@ class Home extends Component {
 
     componentDidMount() {
         window.addEventListener('wheel', this.handleScroll);
+        document.addEventListener('touchstart', this.handleTouchStart, false);
+        document.addEventListener('touchmove', this.handleTouchMove, false);
     }
 
     componentWillUnmount() {
         window.removeEventListener('wheel', this.handleScroll);
+        document.removeEventListener('touchstart', this.handleTouchStart, false);
+        document.removeEventListener('touchmove', this.handleTouchMove, false);
     }
 
     render() {

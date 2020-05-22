@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f168d340.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.31b9cfeb.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.31b9cfeb.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.09e67a12.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.09e67a12.js.map",
+    "main.js": "/react-portfolio/static/js/main.ff9c43e7.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.ff9c43e7.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.2db527ec.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2db527ec.js.map",
     "static/css/2.a5b4ddd2.chunk.css": "/react-portfolio/static/css/2.a5b4ddd2.chunk.css",
-    "static/js/2.de82ddbb.chunk.js": "/react-portfolio/static/js/2.de82ddbb.chunk.js",
-    "static/js/2.de82ddbb.chunk.js.map": "/react-portfolio/static/js/2.de82ddbb.chunk.js.map",
+    "static/js/2.933b00c9.chunk.js": "/react-portfolio/static/js/2.933b00c9.chunk.js",
+    "static/js/2.933b00c9.chunk.js.map": "/react-portfolio/static/js/2.933b00c9.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.1eab6d8ee187fb4569a156705977fd37.js": "/react-portfolio/precache-manifest.1eab6d8ee187fb4569a156705977fd37.js",
+    "precache-manifest.c91e5b5dbcb18e3a3385a0b52a4a92d5.js": "/react-portfolio/precache-manifest.c91e5b5dbcb18e3a3385a0b52a4a92d5.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/css/2.a5b4ddd2.chunk.css.map": "/react-portfolio/static/css/2.a5b4ddd2.chunk.css.map",
     "static/css/main.f168d340.chunk.css.map": "/react-portfolio/static/css/main.f168d340.chunk.css.map",
-    "static/js/2.de82ddbb.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.de82ddbb.chunk.js.LICENSE.txt",
+    "static/js/2.933b00c9.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.933b00c9.chunk.js.LICENSE.txt",
     "static/media/aleksandra-wolna.jpg": "/react-portfolio/static/media/aleksandra-wolna.e4fdf3a7.jpg",
     "static/media/czlowiek-spoiler.png": "/react-portfolio/static/media/czlowiek-spoiler.bbb62dfd.png",
     "static/media/facebook.svg": "/react-portfolio/static/media/facebook.75eb8f03.svg",
@@ -27,10 +27,10 @@
     "static/media/twitter.svg": "/react-portfolio/static/media/twitter.bd08eed1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.09e67a12.js",
+    "static/js/runtime-main.2db527ec.js",
     "static/css/2.a5b4ddd2.chunk.css",
-    "static/js/2.de82ddbb.chunk.js",
+    "static/js/2.933b00c9.chunk.js",
     "static/css/main.f168d340.chunk.css",
-    "static/js/main.31b9cfeb.chunk.js"
+    "static/js/main.ff9c43e7.chunk.js"
   ]
 }

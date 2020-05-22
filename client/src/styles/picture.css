@@ -6,3 +6,15 @@
     width: 111%;
     display: block;
 }
+
+@media (max-width: 768px) {
+    .picture {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .picture {
+        visibility: hidden;
+    }
+}

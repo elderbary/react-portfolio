@@ -89,4 +89,16 @@ form {
       width: 240px;
     }
   }
+
+  @media (max-width: 768px) {
+    form {
+      margin-top: 70%;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    form {
+      margin-top: 140%;
+    }
+  }
    

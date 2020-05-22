@@ -151,11 +151,6 @@ a:hover {
   margin-top: 240%;
   margin-bottom: 20%;
 }
-.css-vcfpfv {
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 8px !important;
-  color: red !important;
-}
 
 @media (max-width: 1600px) {
   .col-footer {

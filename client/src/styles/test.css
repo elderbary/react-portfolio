@@ -68,6 +68,7 @@
 
 .div-timeline-mobile {
   visibility: hidden;
+  display: none;
 }
 
 .col-text {
@@ -259,6 +260,7 @@ visibility: hidden;
   }
   .div-timeline-mobile {
     visibility: visible;
+
   }
   .item-picture {
     display: none;

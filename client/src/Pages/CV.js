@@ -50,7 +50,7 @@ class Test extends Component {
                         <Col className="col-std col-toogle" md={1}></Col>
                         <Col className="col-std col-center" md={10}>
                             <div className="div-center">
-                                <Row className="row-stats">
+                                <Row className="row-stats-cv">
                                     <Col className="col-std col-stats">{<English />}</Col>
                                     <Col className="col-std col-stats">{<Office />}</Col>
                                     <Col className="col-std col-stats">{<Adobe />}</Col>

@@ -216,9 +216,11 @@ visibility: hidden;
  .div-navmobile {
    visibility: visible;
  }
-
+ .item-picture {
+   display: none;
+ }
  .item-picture img {
-   visibility: hidden;
+   display: none;
  }
  .col-btn-contact {
    visibility: hidden;
@@ -243,6 +245,14 @@ visibility: hidden;
   }
   .div-timeline-mobile {
     visibility: visible;
+  }
+  .item-picture {
+    display: none;
+    visibility: hidden;
+  }
+  .item-picture img {
+    display: none;
+    visibility: hidden;
   }
 }
 

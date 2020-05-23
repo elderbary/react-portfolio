@@ -60,11 +60,11 @@ class Home extends Component {
         var yDiff = this.yDown - yUp;
 
         if ( yDiff > 0 ) {
+            this.pageDown();
             /* up swipe */
-            this.pageUp();
         } else {
             /* down swipe */
-            this.pageDown();
+            this.pageUp();
         }
         /* reset values */
         this.yDown = null;

@@ -224,13 +224,25 @@ visibility: hidden;
   visibility: visible;
 }
 .col-btn-cv {
-  margin-top: 260%;
-  margin-bottom: 20%;
+  margin-top: 160%;
+  margin-bottom: 10%;
+}
+.row-stats {
+  visibility: hidden;
+  display: none;
+}
 }
 
+@media (max-width: 375.98px) {
+  .col-btn-cv {
+    margin-top: 225%;
+    margin-bottom: 10%;
+  }
 }
-
 @media (max-width: 575.98px) {
+  #cd-timeline {
+    margin-top: -20%;
+  }
   .div-left {
     margin-top: -18%;
   }
@@ -268,9 +280,9 @@ visibility: hidden;
 
 
 #cd-timeline {
+  margin-top: -5%;
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
   margin-bottom: 2em;
 }
 #cd-timeline::before {

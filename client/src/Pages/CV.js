@@ -59,7 +59,7 @@ class Test extends Component {
                                 <Row className="row-cv">
                                     {<MainTimeline />}
                                     <div className="div-timeline-mobile">
-                                        <Timeline>
+                                        {/* <Timeline>
                                             <Event className="event" interval={"2013 – 2016"} title={"Uniwersytet pedagogiczny im. KEN"} subtitle={""}>
                                                 Studia licencjackie, kier. Kulturoznastwo
       </Event>
@@ -78,7 +78,63 @@ class Test extends Component {
                                             <Event interval={"04.2019 – TERAZ"} title={"Redaktor współpracujący"} subtitle={""}>
                                                 igimag.pl
       </Event>
-                                        </Timeline>
+                                        </Timeline> */}
+                                        <section id="cd-timeline" className="cd-container">
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Studia licencjackie</h2>
+                                                    <p>kier. Kulturoznastwo, uczelnia Uniwersytet pedagogiczny im. KEN</p>
+                                                    <span className="cd-date">2013 – 2016</span>
+                                                </div>
+                                            </div>
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Stażysta</h2>
+                                                    <p>Dział promocji i marketingu w firmie Polska Press sp. z o. o.</p>
+                                                    <span className="cd-date">08.2016 – 09.2016</span>
+                                                </div>
+                                            </div>
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Studia magisterskie</h2>
+                                                    <p>kier. Zarządzanie kulturą i mediami, spec. Zarządzanie mediami, uczelnia Uniwersytet Jagielloński</p>
+                                                    <span className="cd-date">2016 – 2018</span>
+                                                </div>
+                                            </div>
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Stażysta</h2>
+                                                    <p>Nowy Bulwar |T| Sztuki Teatr Łaźnia nowa</p>
+                                                    <span className="cd-date">08.2016 – 09.2016</span>
+                                                </div>
+                                            </div>
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Redaktor współpracujący</h2>
+                                                    <p>serialomaniak.com</p>
+                                                    <span className="cd-date">01.2018 – TERAZ</span>
+                                                </div>
+                                            </div>
+                                            <div className="cd-timeline-block">
+                                                <div className="cd-timeline-img cd-movie">
+                                                </div>
+                                                <div className="cd-timeline-content">
+                                                    <h2>Redaktor współpracujący</h2>
+                                                    <p>igimag.pl</p>
+                                                    <span className="cd-date">04.2019 – TERAZ</span>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </Row>
                             </div>

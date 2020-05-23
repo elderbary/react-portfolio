@@ -21,6 +21,37 @@ import { Timeline, Event } from "react-timeline-scribble";
 
 class Test extends Component {
 
+    yDown = null;
+
+    getTouches = (evt) => {
+        return evt.touches || evt.originalEvent.touches;
+    }
+
+    handleTouchStart = (evt) => {
+        const firstTouch = this.getTouches(evt)[0];
+        this.yDown = firstTouch.clientY;
+    }
+
+    handleTouchMove = (evt) => {
+        if (! this.yDown ) {
+            return;
+        }
+
+        var yUp = evt.touches[0].clientY;
+
+        var yDiff = this.yDown - yUp;
+
+        if ( yDiff > 0 ) {
+            window.location.href = '/kontakt';
+            /* up swipe */
+        } else {
+            /* down swipe */
+            window.location.href = '/o-mnie';
+        }
+        /* reset values */
+        this.yDown = null;
+    }
+
     handleScroll = (event) => {
         if (event.deltaY < 0) {
             window.location.href = '/o-mnie';
@@ -36,10 +67,14 @@ class Test extends Component {
 
     componentDidMount() {
         setTimeout(this.enableScroll, 800);
+        document.addEventListener('touchstart', this.handleTouchStart, false);
+        document.addEventListener('touchmove', this.handleTouchMove, false);
     }
 
     componentWillUnmount() {
         window.removeEventListener('wheel', this.handleScroll);
+        document.removeEventListener('touchstart', this.handleTouchStart, false);
+        document.removeEventListener('touchmove', this.handleTouchMove, false);
     }
 
     render() {

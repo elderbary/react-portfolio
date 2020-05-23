@@ -5,6 +5,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  touch-action: pan-down;
 }
 .container-std {
   position: absolute;
@@ -15,6 +16,7 @@
   width: 100vw;
   outline: 1.5px solid black;
   outline-offset: -7vh;
+  touch-action: pan-down;
 }
 .row-main {
   padding-top: 10vh;

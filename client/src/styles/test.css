@@ -186,6 +186,9 @@ a:hover {
  }
 
  @media (max-width: 768px) {
+   .div-timeline-mobile {
+     display: inline;
+   }
   .container-std {
     outline: 0px solid black;
   outline-offset: 0vh;
@@ -241,17 +244,14 @@ visibility: hidden;
   }
 }
 @media (max-width: 575.98px) {
-  #cd-timeline {
-    margin-top: -20%;
-  }
   .div-left {
-    margin-top: -18%;
+    margin-top: -35%;
   }
   .item-stats {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .row-bottom {
-    margin-top: 13%;
+    margin-top: 0%;
   }
   .div-navmobile {
     visibility: visible;
@@ -282,7 +282,7 @@ visibility: hidden;
 
 
 #cd-timeline {
-  margin-top: -5%;
+  margin-top: -15%;
   position: relative;
   padding: 2em 0;
   margin-bottom: 2em;

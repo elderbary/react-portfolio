@@ -98,7 +98,8 @@ form {
 
   @media (max-width: 575.98px) {
     form {
-      margin-top: 140%;
+      margin-top: 80%;
+      margin-bottom: 20%;
     }
   }
    

@@ -249,33 +249,33 @@ a:hover {
 	.col-mobile-menu {
 		visibility: visible;
 		display: inline;
-  }
-  .col-btn-cv {
+	}
+	.col-btn-cv {
 		margin-top: 70vh !important;
 		margin-bottom: 0%;
-  }
+	}
 }
 
 @media (max-width: 376.98px) {
-  .div-left {
+	.div-left {
 		margin-top: -23vh !important;
 	}
 	.col-btn-cv {
 		margin-top: 130vh !important;
 		margin-bottom: 10%;
-  }
-  .div-left {
+	}
+	.div-left {
 		margin-top: -10vh;
-  }
+	}
 	.row-bottom {
 		margin-top: 8vh !important;
-  }
-  .item-stats {
+	}
+	.item-stats {
 		margin-top: 3vh !important;
-  }
-  .col-btn-about {
-    margin-top: 3vh !important;
-  }
+	}
+	.col-btn-about {
+		margin-top: 3vh !important;
+	}
 }
 
 @media (max-width: 575.98px) {
@@ -301,14 +301,14 @@ a:hover {
 	.item-picture img {
 		display: none;
 		visibility: hidden;
-  }
-  .col-btn-about {
-    margin-top: 10vh;
-  }
-  .col-btn-cv {
-	margin-top: 83vh !important;
-	margin-bottom: 5%;
-}
+	}
+	.col-btn-about {
+		margin-top: 10vh;
+	}
+	.col-btn-cv {
+		margin-top: 83vh !important;
+		margin-bottom: 5%;
+	}
 }
 
 .cd-container {
@@ -492,9 +492,9 @@ a:hover {
 	position: relative;
 	z-index: 1;
 	-webkit-user-select: none;
-  user-select: none;
-  top: -3vh;
-  left: -42vw;
+	user-select: none;
+	top: -3vh;
+	left: -42vw;
 }
 
 #menuToggle a {
@@ -511,12 +511,12 @@ a:hover {
 	display: block;
 	width: 40px;
 	height: 30px;
-  position: absolute;
-  left: 42vw;
+	position: absolute;
+	left: 42vw;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
-  -webkit-touch-callout: none;
+	-webkit-touch-callout: none;
 }
 
 #menuToggle span {
@@ -557,18 +557,18 @@ a:hover {
 
 #menu {
 	position: absolute;
-  width: 240px;
+	width: 240px;
 	margin: -60px 0 0 38vw;
-  padding-top: 70px;
-  padding-bottom: 10px;
+	padding-top: 70px;
+	padding-bottom: 10px;
 	display: none;
 	background: #ededed;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	transform-origin: 0% 0%;
 	transform: translate(-700%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  font-family: 'Poppins', sans-serif;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+	font-family: 'Poppins', sans-serif;
 }
 
 #menu li {
@@ -580,4 +580,3 @@ a:hover {
 	display: inline;
 	transform: none;
 }
-

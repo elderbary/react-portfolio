@@ -72,6 +72,9 @@ form {
    form textarea {
      font-size: 14px;
    }
+   form {
+     width: 300px;
+   }
   }
 
   @media (max-width: 992px) {
@@ -90,7 +93,7 @@ form {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     form {
       margin-top: 25vh;
       width: 400px;
@@ -102,11 +105,10 @@ form {
   
   @media (max-width: 575.98px) {
     form {
-      margin-top: 45vh;
-      margin-bottom: 30vh;
+      margin-top: 25vh;
     }
     form button {
-      margin-bottom: 3vh;
+      margin-bottom: 2vh;
     }
   }
    

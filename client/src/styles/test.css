@@ -196,7 +196,7 @@ a:hover {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.div-timeline-mobile {
 		display: inline;
 	}
@@ -305,6 +305,10 @@ a:hover {
   .col-btn-about {
     margin-top: 10vh;
   }
+  .col-btn-cv {
+	margin-top: 83vh !important;
+	margin-bottom: 5%;
+}
 }
 
 .cd-container {

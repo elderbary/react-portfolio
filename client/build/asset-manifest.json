@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8dafad65.chunk.css",
+    "main.css": "/static/css/main.3ab4cd0a.chunk.css",
     "main.js": "/static/js/main.a37c0aa3.chunk.js",
     "main.js.map": "/static/js/main.a37c0aa3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5faf1554.js",
@@ -9,10 +9,10 @@
     "static/js/2.529c9ae9.chunk.js": "/static/js/2.529c9ae9.chunk.js",
     "static/js/2.529c9ae9.chunk.js.map": "/static/js/2.529c9ae9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.794142189c789a3c88150574464d2f93.js": "/precache-manifest.794142189c789a3c88150574464d2f93.js",
+    "precache-manifest.9b4a6f4dbd63c2ad49584327ea87a8fb.js": "/precache-manifest.9b4a6f4dbd63c2ad49584327ea87a8fb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a5b4ddd2.chunk.css.map": "/static/css/2.a5b4ddd2.chunk.css.map",
-    "static/css/main.8dafad65.chunk.css.map": "/static/css/main.8dafad65.chunk.css.map",
+    "static/css/main.3ab4cd0a.chunk.css.map": "/static/css/main.3ab4cd0a.chunk.css.map",
     "static/js/2.529c9ae9.chunk.js.LICENSE.txt": "/static/js/2.529c9ae9.chunk.js.LICENSE.txt",
     "static/media/aleksandra-wolna.jpg": "/static/media/aleksandra-wolna.e4fdf3a7.jpg",
     "static/media/czlowiek-spoiler.png": "/static/media/czlowiek-spoiler.bbb62dfd.png",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.5faf1554.js",
     "static/css/2.a5b4ddd2.chunk.css",
     "static/js/2.529c9ae9.chunk.js",
-    "static/css/main.8dafad65.chunk.css",
+    "static/css/main.3ab4cd0a.chunk.css",
     "static/js/main.a37c0aa3.chunk.js"
   ]
 }

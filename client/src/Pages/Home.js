@@ -9,9 +9,7 @@ import Pagination from "../Components/Pagination";
 import Btn from "../Components/Btn";
 import Statistics from "../Components/Statistics";
 import Text from "../Components/Text";
-import Picture from "../Components/Picture";
 import Social from "../Components/Social";
-import NavMobile from "../Components/NavigationMobile";
 
 import Item from '../Components/Item';
 import Carousel from "react-elastic-carousel";
@@ -51,7 +49,7 @@ class Home extends Component {
     }
 
     handleTouchMove = (evt) => {
-        if (! this.yDown ) {
+        if (!this.yDown) {
             return;
         }
 
@@ -59,7 +57,7 @@ class Home extends Component {
 
         var yDiff = this.yDown - yUp;
 
-        if ( yDiff > 0 ) {
+        if (yDiff > 0) {
             this.pageDown();
             /* up swipe */
         } else {
@@ -136,6 +134,23 @@ class Home extends Component {
                                     {<Pagination />}
                                 </div>
                             </div>
+                        </Col>
+                        <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
+                            <nav role="navigation">
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="/"><li>PORTFOLIO</li></a>
+                                        <a href="/o-mnie"><li>O MNIE</li></a>
+                                        <a href="/cv"><li>MOJE CV</li></a>
+                                        <a href="/kontakt"><li>KONTAKT</li></a>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
                         </Col>
                         <Col className="col-std col-left" md={5}>
                             <div className="div-left">

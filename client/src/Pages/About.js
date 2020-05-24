@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Navigation from "../Components/Navigation";
-import Pagination from "../Components/Pagination";
 import Btn from "../Components/Btn";
 import Statistics from "../Components/Statistics";
 import Text from "../Components/Text";
@@ -27,7 +26,7 @@ class Test extends Component {
     }
 
     handleTouchMove = (evt) => {
-        if (! this.yDown ) {
+        if (!this.yDown) {
             return;
         }
 
@@ -35,7 +34,7 @@ class Test extends Component {
 
         var yDiff = this.yDown - yUp;
 
-        if ( yDiff > 0 ) {
+        if (yDiff > 0) {
             window.location.href = '/cv';
             /* up swipe */
         } else {
@@ -77,6 +76,23 @@ class Test extends Component {
                 <Container className="container-std">
                     <Row className="row-main">
                         <Col className="col-std col-toogle" md={1}></Col>
+                        <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
+                            <nav role="navigation">
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="/"><li>PORTFOLIO</li></a>
+                                        <a href="/o-mnie"><li>O MNIE</li></a>
+                                        <a href="/cv"><li>MOJE CV</li></a>
+                                        <a href="/kontakt"><li>KONTAKT</li></a>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        </Col>
                         <Col className="col-std col-left" md={5}>
                             <div className="div-left">
                                 <Container className="container-left">
@@ -103,13 +119,13 @@ class Test extends Component {
                         </Col>
                     </Row>
                     <Row className="row-bottom">
-                        <Col className="col-std col-btn" md={{ span: 4, offset: 4 }}><Btn href="./kontakt" btntext="Napisz do mnie" /></Col>
+                        <Col className="col-std col-btn-about" md={{ span: 4, offset: 4 }}><Btn href="./kontakt" btntext="Napisz do mnie" /></Col>
                         <Col className="col-std col-footer" md={{ span: 3, offset: 9 }}>
                             <p>Projekt i realizacja: <a href="https://dosoft.pl">dosoft.pl</a>  Icon made by Freepik from <a href="https://www.flaticon.com/authors/freepik">flaticon</a></p>
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div >
         );
     }
 }

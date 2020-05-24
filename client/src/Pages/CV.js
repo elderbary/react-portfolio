@@ -33,7 +33,7 @@ class Test extends Component {
     }
 
     handleTouchMove = (evt) => {
-        if (! this.yDown ) {
+        if (!this.yDown) {
             return;
         }
 
@@ -41,7 +41,7 @@ class Test extends Component {
 
         var yDiff = this.yDown - yUp;
 
-        if ( yDiff > 0 ) {
+        if (yDiff > 0) {
             window.location.href = '/kontakt';
             /* up swipe */
         } else {
@@ -83,6 +83,23 @@ class Test extends Component {
                 <Container className="container-std">
                     <Row className="row-main">
                         <Col className="col-std col-toogle" md={1}></Col>
+                        <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
+                            <nav role="navigation">
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="/"><li>PORTFOLIO</li></a>
+                                        <a href="/o-mnie"><li>O MNIE</li></a>
+                                        <a href="/cv"><li>MOJE CV</li></a>
+                                        <a href="/kontakt"><li>KONTAKT</li></a>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        </Col>
                         <Col className="col-std col-center" md={10}>
                             <div className="div-center">
                                 <Row className="row-stats-cv">
@@ -185,7 +202,7 @@ class Test extends Component {
                             <p>Projekt i realizacja: <a href="https://dosoft.pl">dosoft.pl</a>  Icon made by Freepik from <a href="https://www.flaticon.com/authors/freepik">flaticon</a></p>
                         </Col>
                     </Row>
-                </Container>
+                </Container >
             </div >
         );
     }

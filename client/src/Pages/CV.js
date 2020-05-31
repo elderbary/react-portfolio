@@ -38,18 +38,28 @@ class Test extends Component {
         }
 
         var yUp = evt.touches[0].clientY;
-
         var yDiff = this.yDown - yUp;
 
-        if (yDiff > 0) {
+        if ( yDiff > 0 && this.isElementInViewport(document.getElementsByClassName('col-btn-cv')[0])) {
             window.location.href = '/kontakt';
             /* up swipe */
-        } else {
+        } else if (yDiff < 0){
             /* down swipe */
             window.location.href = '/o-mnie';
         }
         /* reset values */
         this.yDown = null;
+    }
+
+    isElementInViewport = (el) => {
+        var rect = el.getBoundingClientRect();
+
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && //* or $(window).height()
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) //* or $(window).width()
+        );
     }
 
     handleScroll = (event) => {

@@ -515,7 +515,7 @@ a:hover {
 	left: 42vw;
 	cursor: pointer;
 	opacity: 0;
-	z-index: 2;
+	z-index: 50002;
 	-webkit-touch-callout: none;
 }
 
@@ -527,7 +527,7 @@ a:hover {
 	position: relative;
 	background: #cdcdcd;
 	border-radius: 3px;
-	z-index: 1;
+	z-index: 50001;
 	transform-origin: 4px 0px;
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
@@ -558,9 +558,9 @@ a:hover {
 #menu {
 	position: absolute;
 	width: 100vw;
-	height: 92vh;
-	margin: -28% 0 0 30vw;
-	padding-top: 160px;
+	height: 98vh;
+	margin: 0 0 0 30vw;
+	padding-top: 18%;
 	padding-bottom: 10px;
 	display: none;
 	background: white;
@@ -570,7 +570,7 @@ a:hover {
 	transform: translate(-700%, 0);
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 	font-family: 'Poppins', sans-serif;
-	z-index: 5000;
+	z-index: 50000;
 }
 
 #menu li {

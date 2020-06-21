@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ddc2d850.chunk.css",
+    "main.js": "/static/js/main.75b1d3b0.chunk.js",
+    "main.js.map": "/static/js/main.75b1d3b0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5faf1554.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5faf1554.js.map",
+    "static/css/2.a5b4ddd2.chunk.css": "/static/css/2.a5b4ddd2.chunk.css",
+    "static/js/2.529c9ae9.chunk.js": "/static/js/2.529c9ae9.chunk.js",
+    "static/js/2.529c9ae9.chunk.js.map": "/static/js/2.529c9ae9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.88c0e2a239326540e280d2a1016381b3.js": "/precache-manifest.88c0e2a239326540e280d2a1016381b3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.a5b4ddd2.chunk.css.map": "/static/css/2.a5b4ddd2.chunk.css.map",
+    "static/css/main.ddc2d850.chunk.css.map": "/static/css/main.ddc2d850.chunk.css.map",
+    "static/js/2.529c9ae9.chunk.js.LICENSE.txt": "/static/js/2.529c9ae9.chunk.js.LICENSE.txt",
+    "static/media/aleksandra-wolna.jpg": "/static/media/aleksandra-wolna.e4fdf3a7.jpg",
+    "static/media/czlowiek-spoiler.png": "/static/media/czlowiek-spoiler.bbb62dfd.png",
+    "static/media/facebook.svg": "/static/media/facebook.75eb8f03.svg",
+    "static/media/instagram.svg": "/static/media/instagram.ffceac7b.svg",
+    "static/media/polacy-nie-czytaja.png": "/static/media/polacy-nie-czytaja.b52f89f8.png",
+    "static/media/recenzja-sucession.png": "/static/media/recenzja-sucession.5cd903ce.png",
+    "static/media/shitshow.png": "/static/media/shitshow.aad2c8af.png",
+    "static/media/szczygiel.png": "/static/media/szczygiel.c2836667.png",
+    "static/media/the-morning-show.png": "/static/media/the-morning-show.7d5522f7.png",
+    "static/media/timeline.svg": "/static/media/timeline.297d239d.svg",
+    "static/media/twitter.svg": "/static/media/twitter.bd08eed1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5faf1554.js",
+    "static/css/2.a5b4ddd2.chunk.css",
+    "static/js/2.529c9ae9.chunk.js",
+    "static/css/main.ddc2d850.chunk.css",
+    "static/js/main.75b1d3b0.chunk.js"
+  ]
+}

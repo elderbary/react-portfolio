@@ -570,6 +570,7 @@ a:hover {
 	transform: translate(-700%, 0);
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 	font-family: 'Poppins', sans-serif;
+	z-index: 5000;
 }
 
 #menu li {

@@ -560,7 +560,7 @@ a:hover {
 	width: 100vw;
 	height: 92vh;
 	margin: -28% 0 0 30vw;
-	padding-top: 70px;
+	padding-top: 160px;
 	padding-bottom: 10px;
 	display: none;
 	background: white;
@@ -573,9 +573,9 @@ a:hover {
 }
 
 #menu li {
-	margin-top: 10%;
+	margin-top: 8%;
 	padding: 10px 0;
-	font-size: 18px;
+	font-size: 23px;
 }
 
 #menuToggle input:checked~ul {

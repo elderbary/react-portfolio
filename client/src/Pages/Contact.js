@@ -34,7 +34,7 @@ class Test extends Component {
         var yDiff = this.yDown - yUp;
 
         if (yDiff < 0) {
-            window.location.href = '/cv';
+            // window.location.href = '/cv';
             /* up swipe */
         }
         /* reset values */

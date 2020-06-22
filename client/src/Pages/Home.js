@@ -103,7 +103,7 @@ class Home extends Component {
             this.seeMore.unsetURL(this.seeMore.currentURL);
             this.seeMore.setURL(this.btnURL[this.currentURLiterator]);
         } else {
-            window.location.href = '/o-mnie';
+            // window.location.href = '/o-mnie';
         }
     }
 

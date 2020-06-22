@@ -6,6 +6,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import CV from "../Pages/CV";
 import Contact from "../Pages/Contact";
+import $ from "jquery";
 
 class App extends Component {
   render() {

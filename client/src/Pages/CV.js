@@ -14,6 +14,7 @@ import English from "../Components/English";
 import Office from "../Components/Office";
 import Adobe from "../Components/Adobe";
 import Norway from "../Components/Norway";
+import $ from "jquery";
 
 import { Timeline, Event } from "react-timeline-scribble";
 
@@ -37,29 +38,28 @@ class Test extends Component {
             return;
         }
 
-        var yUp = evt.touches[0].clientY;
-        var yDiff = this.yDown - yUp;
+        let yUp = evt.touches[0].clientY;
+        let yDiff = this.yDown - yUp;
 
-        if ( yDiff > 0 && this.isElementInViewport(document.getElementsByClassName('col-btn-cv')[0])) {
-            window.location.href = '/kontakt';
+        if ( yDiff > 0 && this.isElementInViewport($('#row-bottom'))) {
+            // window.location.href = '/kontakt';
             /* up swipe */
         } else if (yDiff < 0){
             /* down swipe */
-            window.location.href = '/o-mnie';
+            // window.location.href = '/o-mnie';
         }
         /* reset values */
         this.yDown = null;
     }
 
     isElementInViewport = (el) => {
-        var rect = el.getBoundingClientRect();
+        let elementTop = el.offset().top;
+        let elementBottom = elementTop + el.outerHeight();
 
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && //* or $(window).height()
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth) //* or $(window).width()
-        );
+        let viewportTop = $(window).scrollTop();
+        let viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 
     handleScroll = (event) => {
@@ -91,7 +91,7 @@ class Test extends Component {
         return (
             <div className="div-main">
                 <Container className="container-std">
-                    <Row className="row-main">
+                    <Row className="row-main" id="row-main">
                         <Col className="col-std col-toogle" md={1}></Col>
                         <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
                             <nav role="navigation">
@@ -206,7 +206,7 @@ class Test extends Component {
                             {<Social />}
                         </Col>
                     </Row>
-                    <Row className="row-bottom">
+                    <Row className="row-bottom" id="row-bottom">
                         <Col className="col-std col-btn-cv" md={{ span: 4, offset: 4 }}><Btn btntext="Pobierz CV" /></Col>
                         <Col className="col-std col-footer" md={{ span: 3, offset: 9 }}>
                             <p>Projekt i realizacja: <a href="https://dosoft.pl">dosoft.pl</a>  Icon made by Freepik from <a href="https://www.flaticon.com/authors/freepik">flaticon</a></p>

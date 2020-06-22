@@ -22,46 +22,6 @@ import { Timeline, Event } from "react-timeline-scribble";
 
 class Test extends Component {
 
-    yDown = null;
-
-    getTouches = (evt) => {
-        return evt.touches || evt.originalEvent.touches;
-    }
-
-    handleTouchStart = (evt) => {
-        const firstTouch = this.getTouches(evt)[0];
-        this.yDown = firstTouch.clientY;
-    }
-
-    handleTouchMove = (evt) => {
-        if (!this.yDown) {
-            return;
-        }
-
-        let yUp = evt.touches[0].clientY;
-        let yDiff = this.yDown - yUp;
-
-        if ( yDiff > 0 && this.isElementInViewport($('#row-bottom'))) {
-            // window.location.href = '/kontakt';
-            /* up swipe */
-        } else if (yDiff < 0){
-            /* down swipe */
-            // window.location.href = '/o-mnie';
-        }
-        /* reset values */
-        this.yDown = null;
-    }
-
-    isElementInViewport = (el) => {
-        let elementTop = el.offset().top;
-        let elementBottom = elementTop + el.outerHeight();
-
-        let viewportTop = $(window).scrollTop();
-        let viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    }
-
     handleScroll = (event) => {
         if (event.deltaY < 0) {
             window.location.href = '/o-mnie';
@@ -77,14 +37,10 @@ class Test extends Component {
 
     componentDidMount() {
         setTimeout(this.enableScroll, 800);
-        document.addEventListener('touchstart', this.handleTouchStart, false);
-        document.addEventListener('touchmove', this.handleTouchMove, false);
     }
 
     componentWillUnmount() {
         window.removeEventListener('wheel', this.handleScroll);
-        document.removeEventListener('touchstart', this.handleTouchStart, false);
-        document.removeEventListener('touchmove', this.handleTouchMove, false);
     }
 
     render() {

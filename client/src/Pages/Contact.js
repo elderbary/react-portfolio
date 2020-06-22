@@ -5,41 +5,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Navigation from "../Components/Navigation";
-import Pagination from "../Components/Pagination";
 import Btn from "../Components/Btn";
 import Text from "../Components/Text";
 import Form from "../Components/Form";
 import Social from "../Components/Social";
 
 class Test extends Component {
-
-    yDown = null;
-
-    getTouches = (evt) => {
-        return evt.touches || evt.originalEvent.touches;
-    }
-
-    handleTouchStart = (evt) => {
-        const firstTouch = this.getTouches(evt)[0];
-        this.yDown = firstTouch.clientY;
-    }
-
-    handleTouchMove = (evt) => {
-        if (!this.yDown) {
-            return;
-        }
-
-        var yUp = evt.touches[0].clientY;
-
-        var yDiff = this.yDown - yUp;
-
-        if (yDiff < 0) {
-            // window.location.href = '/cv';
-            /* up swipe */
-        }
-        /* reset values */
-        this.yDown = null;
-    }
 
     handleScroll = (event) => {
         if (event.deltaY < 0) {
@@ -53,14 +24,10 @@ class Test extends Component {
 
     componentDidMount() {
         setTimeout(this.enableScroll, 800);
-        document.addEventListener('touchstart', this.handleTouchStart, false);
-        document.addEventListener('touchmove', this.handleTouchMove, false);
     }
 
     componentWillUnmount() {
         window.removeEventListener('wheel', this.handleScroll);
-        document.removeEventListener('touchstart', this.handleTouchStart, false);
-        document.removeEventListener('touchmove', this.handleTouchMove, false);
     }
 
     render() {

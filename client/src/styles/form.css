@@ -6,6 +6,7 @@ form {
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
+
   }
   
   form input {
@@ -105,7 +106,9 @@ form {
   
   @media (max-width: 575.98px) {
     form {
-      margin-top: 25vh;
+      margin-top: 52vh;
+      width: 100%;
+      left: 44%;
     }
     form button {
       margin-bottom: 2vh;

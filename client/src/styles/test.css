@@ -306,8 +306,8 @@ a:hover {
 		margin-top: 10vh;
 	}
 	.col-btn-cv {
-		margin-top: 95vh !important;
-		margin-bottom: 5%;
+		margin-top: 145vh !important;
+		margin-bottom: 8%;
 	}
 }
 
@@ -560,7 +560,7 @@ a:hover {
 	width: 100vw;
 	height: 98vh;
 	margin: 0 0 0 30vw;
-	padding-top: 18%;
+	padding-top: 80px;
 	padding-bottom: 10px;
 	display: none;
 	background: white;

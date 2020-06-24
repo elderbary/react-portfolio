@@ -281,7 +281,7 @@ a:hover {
 	}
 	.item-stats {
 		margin-top: -0.5vh;
-		z-index: 10000;
+		
 	}
 	.row-bottom {
 		margin-top: -8vh;
@@ -558,7 +558,7 @@ a:hover {
 	margin-top: -20vh;
 	padding-top: 16vh;
 	padding-bottom: 1vh;
-	margin-left: 1vh;
+	margin-left: 2vh;
 }
 .row-mobile {
 	height: 3vh;
@@ -570,7 +570,7 @@ a:hover {
 
 .div-mobile-title {
 	font-size: 20px;
-	margin-top: -0.8vh;
+	margin-top: -0.5vh;
 	color: #a6a6a6;
 }
 

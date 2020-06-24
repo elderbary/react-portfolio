@@ -37,7 +37,6 @@
 .col-mobile-menu {
 	visibility: hidden;
 	display: none;
-	background: yellow;
 }
 
 .div-center {
@@ -494,8 +493,6 @@ a:hover {
 	z-index: 1;
 	-webkit-user-select: none;
 	user-select: none;
-	top: -2vh;
-	left: -35vw;
 }
 
 #menuToggle a {
@@ -513,7 +510,7 @@ a:hover {
 	width: 40px;
 	height: 30px;
 	position: absolute;
-	left: 42vw;
+	left: 4vw;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 50002;
@@ -556,11 +553,34 @@ a:hover {
 	transform: rotate(-45deg) translate(0, -1px);
 }
 
+.col-mobile-menu {
+	z-index: 1000;
+	background: white;
+	height: 20vh;
+	margin-top: -10vh;
+	padding-top: 16vh;
+	padding-bottom: 2vh;
+	margin-left: 1vh;
+}
+.row-mobile {
+	height: 3vh;
+}
+
+.col-mobile-title {
+	margin-left: -6vw;
+}
+
+.div-mobile-title {
+	font-size: 23px;
+	margin-top: -0.8vh;
+	color: #a6a6a6;
+}
+
 #menu {
 	position: absolute;
 	width: 100vw;
 	height: 98vh;
-	margin: 0 0 0 30vw;
+	margin: -5vh 0 0 -3vw;
 	padding-top: 80px;
 	padding-bottom: 10px;
 	display: none;
@@ -587,7 +607,3 @@ a:hover {
 
 /* Title menu mobile */ 
 
-.div-mobile-title {
-	background: red;
-	width: 20%;
-}

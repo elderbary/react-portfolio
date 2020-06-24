@@ -258,7 +258,7 @@ a:hover {
 
 @media (max-width: 376.98px) {
 	.div-left {
-		margin-top: -20vh;
+		margin-top: -23vh !important;
 	}
 	.col-btn-cv {
 		margin-top: 150vh !important;

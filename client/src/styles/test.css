@@ -277,13 +277,14 @@ a:hover {
 
 @media (max-width: 575.98px) {
 	.div-left {
-		margin-top: -25vh;
+		margin-top: -28vh;
 	}
 	.item-stats {
-		margin-top: 0vh;
+		margin-top: -0.5vh;
+		z-index: 10000;
 	}
 	.row-bottom {
-		margin-top: -4vh;
+		margin-top: -8vh;
 	}
 	.div-navmobile {
 		visibility: visible;
@@ -554,10 +555,10 @@ a:hover {
 	z-index: 1000;
 	background: white;
 	height: 20vh;
-	margin-top: -16vh;
+	margin-top: -20vh;
 	padding-top: 16vh;
 	padding-bottom: 1vh;
-	margin-left: 3vh;
+	margin-left: 1vh;
 }
 .row-mobile {
 	height: 3vh;

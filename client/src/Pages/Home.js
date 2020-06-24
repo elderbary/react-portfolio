@@ -12,7 +12,7 @@ import Text from "../Components/Text";
 import Social from "../Components/Social";
 
 import Item from '../Components/Item';
-import Carousel from "react-elastic-carousel";
+import Carousel from 'react-elastic-carousel';
 
 import sucession from '../images/recenzja-sucession.png'
 import polacy from '../images/polacy-nie-czytaja.png'
@@ -135,23 +135,29 @@ class Home extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
-                            <nav role="navigation">
-                                <div id="menuToggle">
-                                    <input type="checkbox" />
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <ul id="menu">
-                                        <a href="/"><li>PORTFOLIO</li></a>
-                                        <a href="/o-mnie"><li>O MNIE</li></a>
-                                        <a href="/cv"><li>MOJE CV</li></a>
-                                        <a href="/kontakt"><li>KONTAKT</li></a>
-                                    </ul>
+                        <div className="div-mobile-title">
+                            <Col className="col-std col-mobile-menu" md={2}>
+                                <div className="div-menu-mobile">
+                                    <nav role="navigation">
+                                        <div id="menuToggle">
+                                            <input type="checkbox" />
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <ul id="menu">
+                                                <a href="/"><li>PORTFOLIO</li></a>
+                                                <a href="/o-mnie"><li>O MNIE</li></a>
+                                                <a href="/cv"><li>MOJE CV</li></a>
+                                                <a href="/kontakt"><li>KONTAKT</li></a>
+                                            </ul>
+                                        </div>
+                                    </nav>
                                 </div>
-                            </nav>
+                                <div className="div-title">
+                                    <p>PORTFOLIO</p>
+                                </div>
+                            </Col>
                         </div>
-                        </Col>
                         <Col className="col-std col-left" md={5}>
                             <div className="div-left">
                                 <Container className="container-left">
@@ -243,10 +249,9 @@ class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div >
         );
     }
 }
 
 export default Home;
-

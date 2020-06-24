@@ -37,6 +37,7 @@
 .col-mobile-menu {
 	visibility: hidden;
 	display: none;
+	background: yellow;
 }
 
 .div-center {
@@ -504,7 +505,7 @@ a:hover {
 }
 
 #menuToggle a:hover {
-	color: tomato;
+	color:   #a6a6a6;
 }
 
 #menuToggle input {
@@ -582,4 +583,11 @@ a:hover {
 #menuToggle input:checked~ul {
 	display: inline;
 	transform: none;
+}
+
+/* Title menu mobile */ 
+
+.div-mobile-title {
+	background: red;
+	width: 20%;
 }

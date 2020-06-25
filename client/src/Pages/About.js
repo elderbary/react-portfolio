@@ -11,7 +11,6 @@ import Text from "../Components/Text";
 import Social from "../Components/Social";
 import CVPicture from "../Components/CVPicture";
 
-
 class Test extends Component {
 
     handleScroll = (event) => {

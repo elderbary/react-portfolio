@@ -52,3 +52,13 @@
       font-size: 14px;
     }
    }
+
+   @media (max-width: 376.98px){
+    .statistics-container h2 {
+      font-size: 13px;
+    }
+
+    .statistics-container p {
+      font-size: 12px;
+    }
+   }

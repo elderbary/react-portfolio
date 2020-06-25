@@ -138,6 +138,9 @@
 	transform: translate(-5%, 50%);
 }
 
+.row-down-button {
+	display: none;
+}
 .col-footer {
 	margin-top: -2.5%;
 	padding-top: 1%;
@@ -254,37 +257,43 @@ a:hover {
 		margin-top: 70vh !important;
 		margin-bottom: 0%;
 	}
+	.row-down-button {
+		display: inline;
+	}
 }
 
 @media (max-width: 376.98px) {
 	.div-left {
-		margin-top: -23vh !important;
+		margin-top: -25vh !important;
 	}
 	.col-btn-cv {
 		margin-top: 150vh !important;
 		margin-bottom: 10%;
 	}
 	.row-bottom {
-		margin-top: 8vh !important;
+		margin-top: -3vh !important;
 	}
 	.item-stats {
-		margin-top: 3vh !important;
+		margin-top: 0vh !important;
 	}
 	.col-btn-about {
 		margin-top: 3vh !important;
+	}
+	.row-down-button {
+		display: inline;
 	}
 }
 
 @media (max-width: 575.98px) {
 	.div-left {
-		margin-top: -25vh;
+		margin-top: -24vh;
 	}
 	.item-stats {
 		margin-top: -0.5vh;
 		
 	}
 	.row-bottom {
-		margin-top: -8vh;
+		margin-top: -2vh;
 	}
 	.div-navmobile {
 		visibility: visible;
@@ -304,8 +313,11 @@ a:hover {
 		margin-top: 10vh;
 	}
 	.col-btn-cv {
-		margin-top: 145vh !important;
+		margin-top: 890px !important;
 		margin-bottom: 8%;
+	}
+	.row-down-button {
+		display: inline;
 	}
 }
 
@@ -555,7 +567,7 @@ a:hover {
 	z-index: 1000;
 	background: white;
 	height: 20vh;
-	margin-top: -20vh;
+	margin-top: -21vh;
 	padding-top: 16vh;
 	padding-bottom: 1vh;
 	margin-left: 2vh;
@@ -605,3 +617,49 @@ a:hover {
 
 /* Title menu mobile */ 
 
+.row-down-button {
+	margin-top: 2.5vh;
+	background: red;
+}
+
+.down-button a span {
+	position: absolute;
+	left: 45%;
+	width: 24px;
+	height: 24px;
+	border-left: 1px solid black;
+  	border-bottom: 1px solid black;
+  	-webkit-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+  	-webkit-animation: sdb05 1.5s infinite;
+  	animation: sdb05 1.5s infinite;
+  	box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+	0% {
+	  -webkit-transform: rotate(-45deg) translate(0, 0);
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+	  opacity: 0;
+	}
+  }
+  @keyframes sdb05 {
+	0% {
+	  transform: rotate(-45deg) translate(0, 0);
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  transform: rotate(-45deg) translate(-20px, 20px);
+	  opacity: 0;
+	}
+  }
+  

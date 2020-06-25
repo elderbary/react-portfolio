@@ -257,6 +257,12 @@ class Home extends Component {
                             <p>Projekt i realizacja: <a href="https://dosoft.pl">dosoft.pl</a>  Icon made by Freepik from <a href="https://www.flaticon.com/authors/freepik">flaticon</a></p>
                         </Col>
                     </Row>
+
+                    <Row className="row-down-button">
+                        <div className="down-button">
+                            <a href=""><span></span></a>
+                        </div>
+                    </Row>
                 </Container>
             </div >
         );

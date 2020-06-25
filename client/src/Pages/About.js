@@ -41,22 +41,39 @@ class Test extends Component {
                 <Container className="container-std">
                     <Row className="row-main">
                         <Col className="col-std col-toogle" md={1}></Col>
-                        <Col className="col-std col-mobile-menu"> <div className="div-menu-mobile">
-                            <nav role="navigation">
-                                <div id="menuToggle">
-                                    <input type="checkbox" />
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <ul id="menu">
-                                        <a href="/"><li>PORTFOLIO</li></a>
-                                        <a href="/o-mnie"><li>O MNIE</li></a>
-                                        <a href="/cv"><li>MOJE CV</li></a>
-                                        <a href="/kontakt"><li>KONTAKT</li></a>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+                        <Col className="col-std col-mobile-menu">
+                            <div className="div-mobile">
+                                <Row className="row-mobile">
+                                    <Col className="col-std col-menu-mobile">
+                                        <div className="div-menu-mobile">
+                                            <nav role="navigation">
+                                                <div id="menuToggle">
+                                                    <input type="checkbox" />
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <ul id="menu">
+                                                        <a href="/"><li>PORTFOLIO</li></a>
+                                                        <a href="/o-mnie"><li>O MNIE</li></a>
+                                                        <a href="/cv"><li>MOJE CV</li></a>
+                                                        <a href="/kontakt"><li>KONTAKT</li></a>
+                                                    </ul>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </Col>
+                                    <Col className="col-std col-mobile-title">
+                                        <div className="div-mobile-title">
+                                            <p>O MNIE</p>
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                    </Col>
+                                    <Col>
+                                    </Col>
+
+                                </Row>
+                            </div>
                         </Col>
                         <Col className="col-std col-left" md={5}>
                             <div className="div-left">

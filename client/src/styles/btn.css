@@ -1,6 +1,9 @@
 .btn-container {
     width: 55%;
     background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-0%, -50%);
 }
 
 .button a {
@@ -24,7 +27,7 @@
     text-transform: uppercase;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, 50%);
 
 }
 
@@ -43,10 +46,18 @@
     color: white;
 }
 
+@media (min-width:2200px) {
+    .button {
+        transform: translate(-50%, 80%);
+    }
+}
+
+
 @media (max-width: 1600px) {
  .button {
     padding: 5px 14px;
     font-size: 24px;
+    transform: translate(-50%,  25%);
  }
 }
 
@@ -54,6 +65,9 @@
     .button {
         padding: 6px 15px;
         font-size: 22px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,  0%);
     }
 }
 

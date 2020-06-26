@@ -27,7 +27,7 @@
     text-transform: uppercase;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 100%);
 
 }
 
@@ -46,9 +46,12 @@
     color: white;
 }
 
-@media (min-width:2200px) {
+@media (max-width: 2700px) {
     .button {
-        transform: translate(-50%, 80%);
+        transform: translate(-50%, 50%);
+    }
+    .btn-container {
+        transform: translate(-0%, -50%);
     }
 }
 
@@ -59,6 +62,9 @@
     font-size: 24px;
     transform: translate(-50%,  25%);
  }
+ .btn-container {
+    transform: translate(-0%, -50%);
+}
 }
 
 @media (max-width: 1400px) {

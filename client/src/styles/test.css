@@ -11,7 +11,7 @@
 .container-std {
 	position: absolute;
 	left: 50%;
-	top: 45%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 	touch-action: pan-down;
 	width: 50%;
@@ -23,6 +23,7 @@
 .row-main {
 	padding-top: 10vh;
 	height: 90vh;
+	margin-left: 0px;
 }
 
 .row-bottom {

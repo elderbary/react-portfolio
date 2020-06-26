@@ -124,7 +124,7 @@ class Home extends Component {
     render() {
         return (
             <div className="div-main">
-                <Container className="container-frame">
+                <div className="container-frame">
                     <Container className="container-std">
                         <Row className="row-main">
                             <Col className="col-std col-toggle" md={1}>
@@ -265,7 +265,7 @@ class Home extends Component {
                             </div>
                         </Row>
                     </Container>
-                </Container>
+                </div>
             </div >
         );
     }

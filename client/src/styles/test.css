@@ -8,6 +8,7 @@
 	touch-action: pan-down;
 }
 
+
 .container-std {
 	position: absolute;
 	left: 50%;
@@ -599,6 +600,7 @@ a:hover {
 	font-size: 20px;
 	margin-top: -0.5vh;
 	color: #a6a6a6;
+	width: 120%;
 }
 
 #menu {

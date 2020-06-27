@@ -64,7 +64,7 @@ class Test extends Component {
                                     </Col>
                                     <Col className="col-std col-mobile-title">
                                         <div className="div-mobile-title">
-                                            <p>O MNIE</p>
+                                            <p>O mnie</p>
                                         </div>
                                     </Col>
                                     <Col>

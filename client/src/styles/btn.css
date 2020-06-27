@@ -3,7 +3,7 @@
     background: white;
     left: 50%;
     top: 50%;
-    transform: translate(-0%, -50%);
+    transform: translate(-0%, 50%);
 }
 
 .button a {
@@ -27,7 +27,7 @@
     text-transform: uppercase;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 20%);
 
 }
 
@@ -46,7 +46,7 @@
     color: white;
 }
 
-@media (max-width: 2700px) {
+@media (max-width: 3000px) {
     .button {
         transform: translate(-50%, 0%);
     }

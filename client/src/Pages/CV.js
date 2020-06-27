@@ -14,34 +14,9 @@ import English from "../Components/English";
 import Office from "../Components/Office";
 import Adobe from "../Components/Adobe";
 import Norway from "../Components/Norway";
-import $ from "jquery";
-
-import { Timeline, Event } from "react-timeline-scribble";
-
 
 
 class Test extends Component {
-
-    handleScroll = (event) => {
-        if (event.deltaY < 0) {
-            window.location.href = '/o-mnie';
-        }
-        else if (event.deltaY > 0) {
-            window.location.href = '/kontakt';
-        }
-    }
-
-    enableScroll = () => {
-        window.addEventListener('wheel', this.handleScroll);
-    }
-
-    componentDidMount() {
-        setTimeout(this.enableScroll, 800);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('wheel', this.handleScroll);
-    }
 
     render() {
         return (

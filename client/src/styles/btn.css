@@ -27,7 +27,7 @@
     text-transform: uppercase;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 110%);
 
 }
 
@@ -48,10 +48,10 @@
 
 @media (max-width: 2700px) {
     .button {
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 0%);
     }
     .btn-container {
-        transform: translate(-0%, -50%);
+        transform: translate(-0%, -10%);
     }
 }
 
@@ -63,7 +63,7 @@
     transform: translate(-50%,  25%);
  }
  .btn-container {
-    transform: translate(-0%, -50%);
+    transform: translate(-0%, -20%);
 }
 }
 

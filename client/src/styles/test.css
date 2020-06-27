@@ -639,43 +639,61 @@ a:hover {
 }
 
 .down-button a span {
+	margin-top: 15px;
 	position: absolute;
-	left: 48%;
-	width: 24px;
-	height: 24px;
-	border-left: 1px solid black;
-  	border-bottom: 1px solid black;
-  	-webkit-transform: rotate(-45deg);
-  	transform: rotate(-45deg);
-  	-webkit-animation: sdb05 1.5s infinite;
-  	animation: sdb05 1.5s infinite;
-  	box-sizing: border-box;
+	left: 50%;
+	width: 20px;
+	height: 35px;
+	margin-left: -15px;
+	border: 2px solid black;
+	border-radius: 50px;
+	box-sizing: border-box;
 }
 
-@-webkit-keyframes sdb05 {
+.down-button a span::before {
+	 position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: black;
+	border-radius: 100%;
+	-webkit-animation: sdb10 2s infinite;
+	animation: sdb10 2s infinite;
+	box-sizing: border-box;
+  }
+
+  @-webkit-keyframes sdb10 {
 	0% {
-	  -webkit-transform: rotate(-45deg) translate(0, 0);
+	  -webkit-transform: translate(0, 0);
 	  opacity: 0;
 	}
-	50% {
+	40% {
 	  opacity: 1;
 	}
+	80% {
+	  -webkit-transform: translate(0, 20px);
+	  opacity: 0;
+	}
 	100% {
-	  -webkit-transform: rotate(-45deg) translate(-20px, 20px);
 	  opacity: 0;
 	}
   }
-  @keyframes sdb05 {
+  @keyframes sdb10 {
 	0% {
-	  transform: rotate(-45deg) translate(0, 0);
+	  transform: translate(0, 0);
 	  opacity: 0;
 	}
-	50% {
+	40% {
 	  opacity: 1;
 	}
+	80% {
+	  transform: translate(0, 10px);
+	  opacity: 0;
+	}
 	100% {
-	  transform: rotate(-45deg) translate(-20px, 20px);
 	  opacity: 0;
 	}
   }
-  

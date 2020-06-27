@@ -260,7 +260,7 @@ class Home extends Component {
 
                     <Row className="row-down-button">
                         <div className="down-button">
-                            <a href=""><span></span></a>
+                            <a> <span> POCIĄGNIJ W DÓŁ</span></a>
                         </div>
                     </Row>
                 </Container>

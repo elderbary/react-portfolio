@@ -18,7 +18,7 @@ class App extends Component {
           <Route path="/kontakt" exact component={Contact} />
         </Switch>
       </Router>
-    );
+    )
   }
 }
 

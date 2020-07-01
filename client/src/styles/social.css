@@ -20,19 +20,19 @@
 
 @media (max-width: 1600px) {
         .social {
-            transform: translate(-30%, -100%);
+            transform: translate(-25%, -100%);
         }
    }
    
 @media (max-width: 1400px) {
     .social {
-        transform: translate(-50%, -100%);
+        transform: translate(-90%, -100%);
     }
    }
 
 @media (max-width: 992px) {
     .social {
-        transform: translate(-80%, -70%);
+        transform: translate(-120%, -70%);
     }
     .social img {
         height: 14px;

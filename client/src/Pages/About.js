@@ -12,28 +12,6 @@ import Social from "../Components/Social";
 import CVPicture from "../Components/CVPicture";
 
 class Test extends Component {
-
-    handleScroll = (event) => {
-        if (event.deltaY < 0) {
-            window.location.href = '/';
-        }
-        else if (event.deltaY > 0) {
-            window.location.href = '/cv';
-        }
-    }
-
-    enableScroll = () => {
-        window.addEventListener('wheel', this.handleScroll);
-    }
-
-    componentDidMount() {
-        setTimeout(this.enableScroll, 800);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('wheel', this.handleScroll);
-    }
-
     render() {
         return (
             <div className="div-main">

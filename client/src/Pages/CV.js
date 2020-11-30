@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 import Navigation from "../Components/Navigation";
 import Pagination from "../Components/Pagination";
-import Btn from "../Components/Btn";
+import BtnCV from "../Components/BtnCV";
 import Social from "../Components/Social";
 import MainTimeline from "../Components/MainTimeline";
 
@@ -17,6 +17,8 @@ import Norway from "../Components/Norway";
 import $ from "jquery";
 
 import { Timeline, Event } from "react-timeline-scribble";
+
+
 
 
 
@@ -159,7 +161,7 @@ class Test extends Component {
                         </Col>
                     </Row>
                     <Row className="row-bottom" id="row-bottom">
-                        <Col className="col-std col-btn-cv" md={{ span: 4, offset: 4 }}><Btn btntext="Pobierz CV" /></Col>
+                        <Col className="col-std col-btn-cv" md={{ span: 4, offset: 4 }}> <BtnCV btntext="Pobierz CV" /></Col>
                         <Col className="col-std col-footer" md={{ span: 3, offset: 9 }}>
                             <p>Projekt i realizacja: <a href="https://dosoft.pl">dosoft.pl</a>  Icon made by Freepik from <a href="https://www.flaticon.com/authors/freepik">flaticon</a></p>
                         </Col>
